@@ -1,33 +1,33 @@
 //---------------------------------------------------------------------------
 
-#ifndef _Unit1H
-#define _Unit1H
+#ifndef _unit_mainH
+#define _unit_mainH
 //---------------------------------------------------------------------------
 #include <Classes.hpp>
 #include <Controls.hpp>
 #include <StdCtrls.hpp>
 #include <Forms.hpp>
 #include <ExtCtrls.hpp>
+#include <Grids.hpp>
+#include <pngimage.hpp>
 //---------------------------------------------------------------------------
-class TForm1 : public TForm
+class TForm4 : public TForm
 {
 __published:	// IDE-managed Components
-	TLabeledEdit *LabeledEdit1;
-	TLabeledEdit *LabeledEdit2;
-	TLabeledEdit *LabeledEdit3;
-	TLabeledEdit *LabeledEdit4;
-	TLabeledEdit *LabeledEdit5;
-	TLabeledEdit *LabeledEdit6;
-	TLabeledEdit *LabeledEdit7;
-	TLabeledEdit *LabeledEdit8;
-	TLabeledEdit *LabeledEdit9;
+	TStringGrid *Cnst;
+	TLabel *Label1;
+	TStringGrid *Kfc;
+	TStringGrid *Cnt;
+	TLabel *Label2;
+	TLabel *Label3;
+	TLabel *Label4;
 	TButton *Button1;
-	void __fastcall Button1Click(TObject *Sender);
+	TImage *Image1;
 private:	// User declarations
 public:		// User declarations
-	__fastcall TForm1(TComponent* Owner);
+	__fastcall TForm4(TComponent* Owner);
 };
 //---------------------------------------------------------------------------
-extern PACKAGE TForm1 *Form1;
+extern PACKAGE TForm4 *Form4;
 //---------------------------------------------------------------------------
 #endif

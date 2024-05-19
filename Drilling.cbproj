@@ -60,19 +60,36 @@
 			<TASM_Debugging>None</TASM_Debugging>
 		</PropertyGroup>
 		<ItemGroup>
-			<CppCompile Include="Drilling.cpp">
-				<BuildOrder>0</BuildOrder>
-			</CppCompile>
-			<ResFiles Include="Drilling.res">
-				<ModuleName>Drilling.res</ModuleName>
-				<BuildOrder>1</BuildOrder>
-			</ResFiles>
 			<CppCompile Include="_Unit1.cpp">
 				<Form>Form1</Form>
 				<DependentOn>_Unit1.h</DependentOn>
 				<BuildOrder>2</BuildOrder>
 			</CppCompile>
+			<ResFiles Include="Drilling.res">
+				<BuildOrder>1</BuildOrder>
+			</ResFiles>
+			<CppCompile Include="Drilling.cpp">
+				<BuildOrder>0</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="_Unitl.cpp">
+				<Form>Form2</Form>
+				<DependentOn>_Unitl.h</DependentOn>
+				<BuildOrder>3</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="_Cnrtol.cpp">
+				<Form>Form3</Form>
+				<DependentOn>_Cnrtol.h</DependentOn>
+				<BuildOrder>4</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="_unit_main.cpp">
+				<Form>Form4</Form>
+				<DependentOn>_unit_main.h</DependentOn>
+				<BuildOrder>5</BuildOrder>
+			</CppCompile>
 			<FormResources Include="_Unit1.dfm"/>
+			<FormResources Include="_Unitl.dfm"/>
+			<FormResources Include="_Cnrtol.dfm"/>
+			<FormResources Include="_unit_main.dfm"/>
 			<BuildConfiguration Include="Base">
 				<Key>Base</Key>
 			</BuildConfiguration>
