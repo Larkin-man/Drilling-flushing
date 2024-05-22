@@ -25,6 +25,7 @@ __published:	// IDE-managed Components
 	TLabel *Label4;
 	TImage *Image1;
 	TBitBtn *BitBtn1;
+	TEdit *debug;
 	void __fastcall FormCreate(TObject *Sender);
 	void __fastcall BitBtn1Click(TObject *Sender);
 private:	// User declarations

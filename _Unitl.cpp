@@ -1,6 +1,7 @@
 //---------------------------------------------------------------------------
 
 #include <vcl.h>
+#include <math.h>
 #pragma hdrstop
 
 #include "_Unitl.h"
@@ -9,8 +10,56 @@
 #pragma resource "*.dfm"
 TForm2 *Form2;
 //---------------------------------------------------------------------------
-__fastcall TForm2::TForm2(TComponent* Owner)
-	: TForm(Owner)
+__fastcall TForm2::TForm2(TComponent* Owner)	: TForm(Owner)
 {
 }
 //---------------------------------------------------------------------------
+//=======Расчёт допустимого давления в скважине======
+
+double Pspo; //zanenne p cknaxnne mpi CIIO;
+extern double Pgr; //xapaenme rugpopaspsina actos;
+double Vt; //ckopocts xpwxenns tpy6 mpx CTO;
+double a; //yckopenue apmoxenna KooHHDI Tpy6;
+double Gk; //sec na Kpioxe;
+double Gx; //max - MaKcuMasibHo onyer. Bec Ha KpIoKe.
+
+extern double b ;//Постояная опоры долота
+extern double betta ;//показатель степени, зависящий от твердости породы и среды, в которой работает долото
+extern double nu ;//Пластическая вязкость раствора
+extern double gamma ;//Удельный вес бурового раствора
+extern double tauo ;//Динамическое напряжение сдвига буровго раствора
+extern double vkp ;//Средняя скорость течения бурового раствора в кольцевом пространстве скаважины
+//double vkp ;//Критическая скорость движения раствора
+extern double Q ;//Расход бурового раствора
+extern double D ;//Диаметр скважины (долота)
+extern double dn ;//Наружный диаметр бурильных труб
+extern double dny ;//Наружный диаметр утяжеленных бурильных труб(УБТ)
+extern double dd ;//внутрений диаметр труб
+extern double dy ;//Внутрений диаметр УБТ
+extern double ddo ;//Диаметр наименьшего проходного сечения в соеденении
+extern double Lc ;//глубина скважины
+extern double L ;//Длина бурильных труб
+extern double ly ;//Длина УБТ
+extern double lt ;//Длина одной трубы
+
+double FindSpuskDodem()
+{
+//Pspo = 8,75 * 0.01 * ((Vt * dny)/pow(D-Dr, 2) * pow((Dn/(D-Dn)),1.5);
+//Pspo = Pspo && (4*(TauO*L/CriteriaA (D-Dn)+0.025) +a * (Ly*Dn)/D-Dn)+ y*Lc));
+////Спуско-подъёмные операции оптимизируюца согласно критерию "минимум стоимости цикла СПО за рейс",
+////который может использоваться независимо или входить в состав критерия "минимум стоимости 1 метра проходки"
+//qSpo=Ch*Lc*(1/Vc+1/Vp);
+return Pspo;
+}
+
+void __fastcall TForm2::Button1Click(TObject *Sender)
+{                         // LabeledEdit1.
+//	Pspo;// = LabeledEdit1 //zanenne p cknaxnne mpi CIIO;
+// Pgr; //xapaenme rugpopaspsina actos;
+// Vt; //ckopocts xpwxenns tpy6 mpx CTO;
+// a; //yckopenue apmoxenna KooHHDI Tpy6;
+// Gk; //sec na Kpioxe;
+// Gx; //max - MaKcuMasibHo onyer. Bec Ha KpIoKe.
+}
+//---------------------------------------------------------------------------
+

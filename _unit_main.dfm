@@ -2924,4 +2924,12 @@ object Form4: TForm4
     TabOrder = 3
     OnClick = BitBtn1Click
   end
+  object debug: TEdit
+    Left = 656
+    Top = 464
+    Width = 121
+    Height = 30
+    TabOrder = 4
+    Text = 'debug'
+  end
 end

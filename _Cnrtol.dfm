@@ -166,7 +166,7 @@
         Width = 121
         Height = 30
         TabOrder = 0
-        Text = '1'
+        Text = '1,74'
       end
       object eDn: TEdit
         Left = 208
@@ -296,7 +296,7 @@
       Width = 121
       Height = 30
       TabOrder = 0
-      Text = '0'
+      Text = '33,95'
       OnExit = eMExit
     end
     object eGk: TEdit
@@ -305,7 +305,7 @@
       Width = 121
       Height = 30
       TabOrder = 3
-      Text = '0'
+      Text = '17'
       OnExit = eGkExit
     end
     object eGkt: TEdit
@@ -314,7 +314,7 @@
       Width = 121
       Height = 30
       TabOrder = 6
-      Text = '0'
+      Text = '5'
       OnExit = eGktExit
     end
     object eTpr: TEdit
@@ -323,7 +323,7 @@
       Width = 121
       Height = 30
       TabOrder = 11
-      Text = '1'
+      Text = '31'
       OnExit = eTprExit
     end
     object eTprd: TEdit

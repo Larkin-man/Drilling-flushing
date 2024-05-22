@@ -10,9 +10,6 @@
 #pragma resource "*.dfm"
 TForm4 *Form4;
 //---------------------------------------------------------------------------
-__fastcall TForm4::TForm4(TComponent* Owner)	: TForm(Owner)
-{
-}
 const int Vars=2;
 const double Kgam=1.262;
 const double Kqd=9.5;
@@ -66,6 +63,12 @@ double Nr ;//Гидравлическая мощность привода
 
    double Nrom;
    double Nn;
+
+__fastcall TForm4::TForm4(TComponent* Owner)	: TForm(Owner)
+{
+	Nrom = 0;
+   Nn = 0;
+}
 
 //=================Целевая функция=====================
 

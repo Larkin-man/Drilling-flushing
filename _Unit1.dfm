@@ -121,4 +121,21 @@ object Form1: TForm1
     TabOrder = 10
     OnClick = Button2Click
   end
+  object Button3: TButton
+    Left = 64
+    Top = 248
+    Width = 75
+    Height = 25
+    Caption = 'Button2'
+    TabOrder = 11
+    OnClick = Button3Click
+  end
+  object debug: TEdit
+    Left = 96
+    Top = 288
+    Width = 121
+    Height = 30
+    TabOrder = 12
+    Text = 'debug'
+  end
 end
