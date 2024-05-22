@@ -8,6 +8,7 @@
 #include <StdCtrls.hpp>
 #include <Forms.hpp>
 #include <ExtCtrls.hpp>
+#include <ComCtrls.hpp>
 //---------------------------------------------------------------------------
 class TF1 : public TForm
 {
@@ -54,14 +55,33 @@ __published:	// IDE-managed Components
 	TEdit *eVdr;
 	TEdit *e5;
 	TGroupBox *GroupBox1;
-	TMemo *Memo1;
+	TRichEdit *Msg;
+	TPanel *Panel2;
+	TEdit *ePspo;
+	TEdit *ePgr;
 	TEdit *ePobd;
 	TEdit *eQk;
 	TEdit *egamma;
 	TEdit *eD;
 	TEdit *eTp;
-	TEdit *ePspo;
-	TEdit *ePgr;
+	TLabel *Label17;
+	TLabel *Label18;
+	TLabel *Label20;
+	TLabel *Label21;
+	TLabel *Label22;
+	TLabel *Label23;
+	TLabel *Label24;
+	void __fastcall ePspoExit(TObject *Sender);
+	void __fastcall FormCreate(TObject *Sender);
+	void __fastcall eMExit(TObject *Sender);
+	void __fastcall eGkExit(TObject *Sender);
+	void __fastcall eGktExit(TObject *Sender);
+	void __fastcall eTvrExit(TObject *Sender);
+	void __fastcall eTprExit(TObject *Sender);
+	void __fastcall eTbExit(TObject *Sender);
+	void __fastcall Panel1Exit(TObject *Sender);
+	void __fastcall eLÒExit(TObject *Sender);
+	void __fastcall Panel2Exit(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TF1(TComponent* Owner);

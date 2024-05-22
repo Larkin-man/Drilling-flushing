@@ -2,7 +2,7 @@
   Left = 0
   Top = 0
   Caption = #1050#1086#1085#1090#1088#1086#1083#1100' '#1086#1075#1088#1072#1085#1080#1095#1077#1085#1080#1081
-  ClientHeight = 816
+  ClientHeight = 818
   ClientWidth = 1106
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -11,9 +11,10 @@
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnCreate = FormCreate
   DesignSize = (
     1106
-    816)
+    818)
   PixelsPerInch = 120
   TextHeight = 22
   object Label1: TLabel
@@ -26,8 +27,8 @@
   object ScrollBox1: TScrollBox
     Left = 8
     Top = 36
-    Width = 713
-    Height = 772
+    Width = 729
+    Height = 774
     Anchors = [akLeft, akTop, akBottom]
     TabOrder = 0
     object Label2: TLabel
@@ -111,7 +112,7 @@
       Caption = #1043#1088#1072#1085#1080#1094#1072
     end
     object Label16: TLabel
-      Left = 434
+      Left = 394
       Top = 303
       Width = 106
       Height = 88
@@ -125,7 +126,8 @@
       Height = 194
       Caption = 'Panel1'
       ShowCaption = False
-      TabOrder = 0
+      TabOrder = 15
+      OnExit = Panel1Exit
       object Label8: TLabel
         Left = 16
         Top = 17
@@ -164,7 +166,7 @@
         Width = 121
         Height = 30
         TabOrder = 0
-        Text = '0'
+        Text = '1'
       end
       object eDn: TEdit
         Left = 208
@@ -172,7 +174,7 @@
         Width = 121
         Height = 30
         TabOrder = 1
-        Text = '0'
+        Text = '1'
       end
       object eDt: TEdit
         Left = 208
@@ -180,7 +182,7 @@
         Width = 121
         Height = 30
         TabOrder = 2
-        Text = '0'
+        Text = '1'
       end
       object eL: TEdit
         Left = 208
@@ -188,7 +190,7 @@
         Width = 121
         Height = 30
         TabOrder = 3
-        Text = '0'
+        Text = '1'
       end
     end
     object eMt: TLabeledEdit
@@ -201,7 +203,7 @@
       EditLabel.Caption = #1052#1090
       LabelPosition = lpLeft
       TabOrder = 1
-      Text = '0'
+      Text = '1'
     end
     object eMd: TLabeledEdit
       Left = 577
@@ -213,7 +215,7 @@
       EditLabel.Caption = #1052#1076
       LabelPosition = lpLeft
       TabOrder = 2
-      Text = '0'
+      Text = '1'
     end
     object eGkml: TLabeledEdit
       Left = 402
@@ -224,8 +226,8 @@
       EditLabel.Height = 22
       EditLabel.Caption = 'Gk'#1084#1083
       LabelPosition = lpLeft
-      TabOrder = 3
-      Text = '0'
+      TabOrder = 4
+      Text = '1'
     end
     object eGkmk: TLabeledEdit
       Left = 577
@@ -236,8 +238,8 @@
       EditLabel.Height = 22
       EditLabel.Caption = 'Gk'#1084#1082
       LabelPosition = lpLeft
-      TabOrder = 4
-      Text = '0'
+      TabOrder = 5
+      Text = '1'
     end
     object eAr: TLabeledEdit
       Left = 484
@@ -248,8 +250,8 @@
       EditLabel.Height = 22
       EditLabel.Caption = #1040#1088
       LabelPosition = lpLeft
-      TabOrder = 5
-      Text = '0'
+      TabOrder = 7
+      Text = '1'
     end
     object eTvr: TLabeledEdit
       Left = 484
@@ -260,8 +262,9 @@
       EditLabel.Height = 22
       EditLabel.Caption = 'tn'#1076
       LabelPosition = lpLeft
-      TabOrder = 6
-      Text = '0'
+      TabOrder = 8
+      Text = '1'
+      OnExit = eTvrExit
     end
     object eTvrd: TLabeledEdit
       Left = 484
@@ -272,8 +275,8 @@
       EditLabel.Height = 22
       EditLabel.Caption = 't'#1088#1076
       LabelPosition = lpLeft
-      TabOrder = 7
-      Text = '0'
+      TabOrder = 9
+      Text = '1'
     end
     object eTbd: TLabeledEdit
       Left = 484
@@ -284,88 +287,94 @@
       EditLabel.Height = 22
       EditLabel.Caption = 't'#1073#1076
       LabelPosition = lpLeft
-      TabOrder = 8
-      Text = '0'
+      TabOrder = 10
+      Text = '1'
     end
     object eM: TEdit
       Left = 216
       Top = 26
       Width = 121
       Height = 30
-      TabOrder = 9
+      TabOrder = 0
       Text = '0'
+      OnExit = eMExit
     end
     object eGk: TEdit
       Left = 216
       Top = 92
       Width = 121
       Height = 30
-      TabOrder = 10
+      TabOrder = 3
       Text = '0'
+      OnExit = eGkExit
     end
     object eGkt: TEdit
       Left = 216
       Top = 164
       Width = 121
       Height = 30
-      TabOrder = 11
+      TabOrder = 6
       Text = '0'
+      OnExit = eGktExit
     end
     object eTpr: TEdit
       Left = 216
       Top = 244
       Width = 121
       Height = 30
-      TabOrder = 12
-      Text = '0'
+      TabOrder = 11
+      Text = '1'
+      OnExit = eTprExit
     end
     object eTprd: TEdit
       Left = 216
       Top = 300
       Width = 121
       Height = 30
-      TabOrder = 13
-      Text = '0'
+      TabOrder = 12
+      Text = '1'
     end
     object eTb: TEdit
       Left = 216
       Top = 354
       Width = 121
       Height = 30
-      TabOrder = 14
-      Text = '0'
+      TabOrder = 13
+      Text = '1'
+      OnExit = eTbExit
     end
     object eLс: TEdit
       Left = 216
       Top = 628
       Width = 121
       Height = 30
-      TabOrder = 15
-      Text = '0'
+      TabOrder = 16
+      Text = '1'
+      OnExit = eLсExit
     end
     object ePс: TEdit
       Left = 216
       Top = 684
       Width = 121
       Height = 30
-      TabOrder = 16
-      Text = '0'
+      TabOrder = 17
+      Text = '1'
     end
     object eK2: TEdit
       Left = 216
       Top = 734
       Width = 121
       Height = 30
-      TabOrder = 17
-      Text = '0'
+      TabOrder = 18
+      Text = '1'
     end
     object eVdr: TEdit
-      Left = 568
+      Left = 528
       Top = 335
       Width = 121
       Height = 30
-      TabOrder = 18
-      Text = '0'
+      TabOrder = 14
+      Text = '1'
     end
     object e5: TEdit
       Left = 536
@@ -373,83 +382,151 @@
       Width = 121
       Height = 30
       TabOrder = 19
+      Text = '1'
     end
-    object ePobd: TEdit
-      Left = 388
-      Top = 588
-      Width = 121
-      Height = 30
+    object Panel2: TPanel
+      Left = 24
+      Top = 784
+      Width = 337
+      Height = 270
+      Caption = 'Panel2'
+      ShowCaption = False
       TabOrder = 20
-      Text = '0'
-    end
-    object eQk: TEdit
-      Left = 388
-      Top = 624
-      Width = 121
-      Height = 30
-      TabOrder = 21
-      Text = '0'
-    end
-    object egamma: TEdit
-      Left = 388
-      Top = 660
-      Width = 121
-      Height = 30
-      TabOrder = 22
-      Text = '0'
-    end
-    object eD: TEdit
-      Left = 388
-      Top = 696
-      Width = 121
-      Height = 30
-      TabOrder = 23
-      Text = '0'
-    end
-    object eTp: TEdit
-      Left = 388
-      Top = 732
-      Width = 121
-      Height = 30
-      TabOrder = 24
-      Text = '0'
+      OnExit = Panel2Exit
+      object Label17: TLabel
+        Left = 80
+        Top = 18
+        Width = 40
+        Height = 22
+        Caption = 'pobd'
+      end
+      object Label18: TLabel
+        Left = 80
+        Top = 52
+        Width = 19
+        Height = 22
+        Caption = 'qk'
+      end
+      object Label20: TLabel
+        Left = 80
+        Top = 88
+        Width = 58
+        Height = 22
+        Caption = 'gamma'
+      end
+      object Label21: TLabel
+        Left = 80
+        Top = 124
+        Width = 10
+        Height = 22
+        Caption = 'd'
+      end
+      object Label22: TLabel
+        Left = 80
+        Top = 160
+        Width = 16
+        Height = 22
+        Caption = 'tp'
+      end
+      object Label23: TLabel
+        Left = 80
+        Top = 196
+        Width = 26
+        Height = 22
+        Caption = 'pgr'
+      end
+      object Label24: TLabel
+        Left = 80
+        Top = 232
+        Width = 38
+        Height = 22
+        Caption = 'pspo'
+      end
+      object ePspo: TEdit
+        Left = 208
+        Top = 230
+        Width = 121
+        Height = 30
+        TabOrder = 6
+        Text = '1'
+        OnExit = ePspoExit
+      end
+      object ePgr: TEdit
+        Left = 208
+        Top = 194
+        Width = 121
+        Height = 30
+        TabOrder = 5
+        Text = '1'
+      end
+      object ePobd: TEdit
+        Left = 208
+        Top = 14
+        Width = 121
+        Height = 30
+        TabOrder = 0
+        Text = '1'
+      end
+      object eQk: TEdit
+        Left = 208
+        Top = 50
+        Width = 121
+        Height = 30
+        TabOrder = 1
+        Text = '1'
+      end
+      object egamma: TEdit
+        Left = 208
+        Top = 86
+        Width = 121
+        Height = 30
+        TabOrder = 2
+        Text = '1'
+      end
+      object eD: TEdit
+        Left = 208
+        Top = 122
+        Width = 121
+        Height = 30
+        TabOrder = 3
+        Text = '1'
+      end
+      object eTp: TEdit
+        Left = 208
+        Top = 158
+        Width = 121
+        Height = 30
+        TabOrder = 4
+        Text = '1'
+      end
     end
   end
   object GroupBox1: TGroupBox
-    Left = 727
-    Top = 24
-    Width = 354
-    Height = 785
+    Left = 743
+    Top = 0
+    Width = 363
+    Height = 818
+    Align = alRight
     Caption = #1050#1086#1085#1090#1088#1086#1083#1100
     TabOrder = 1
-    object Memo1: TMemo
+    object Msg: TRichEdit
       AlignWithMargins = True
-      Left = 7
-      Top = 29
-      Width = 340
-      Height = 749
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
+      Left = 5
+      Top = 27
+      Width = 353
+      Height = 786
       Align = alClient
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -18
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
       TabOrder = 0
+      ExplicitLeft = 112
+      ExplicitTop = 160
+      ExplicitWidth = 185
+      ExplicitHeight = 89
     end
-  end
-  object ePspo: TEdit
-    Left = 556
-    Top = 624
-    Width = 121
-    Height = 30
-    TabOrder = 2
-    Text = '0'
-  end
-  object ePgr: TEdit
-    Left = 556
-    Top = 660
-    Width = 121
-    Height = 30
-    TabOrder = 3
-    Text = '0'
   end
 end

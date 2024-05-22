@@ -22,3 +22,9 @@ void __fastcall TForm1::Button1Click(TObject *Sender)
 }
 //---------------------------------------------------------------------------
 
+void __fastcall TForm1::Button2Click(TObject *Sender)
+{
+	F1->Show();
+}
+//---------------------------------------------------------------------------
+
