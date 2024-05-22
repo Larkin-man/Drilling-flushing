@@ -1,4 +1,4 @@
-object Form3: TForm3
+﻿object F1: TF1
   Left = 0
   Top = 0
   Caption = #1050#1086#1085#1090#1088#1086#1083#1100' '#1086#1075#1088#1072#1085#1080#1095#1077#1085#1080#1081
@@ -42,23 +42,23 @@ object Form3: TForm3
     object Label3: TLabel
       Left = 24
       Top = 95
-      Width = 161
-      Height = 44
+      Width = 151
+      Height = 22
       Caption = #1042#1077#1089' '#1085#1072' '#1082#1088#1102#1082#1077' (Gk)'
       WordWrap = True
     end
     object Label4: TLabel
       Left = 24
       Top = 145
-      Width = 161
-      Height = 110
+      Width = 138
+      Height = 66
       Caption = #1056#1077#1089#1091#1088#1089' '#1085#1072#1075#1088#1091#1079#1082#1080' '#1090#1072#1083#1077#1074#1086#1075#1086' '#1082#1072#1085#1072#1090#1072' (Gki*ti)'
       WordWrap = True
     end
     object Label5: TLabel
       Left = 24
       Top = 230
-      Width = 161
+      Width = 117
       Height = 44
       Caption = #1042#1088#1077#1084#1103' '#1073#1077#1079' '#1074#1088#1072#1097#1077#1085#1080#1103' (tn)'
       WordWrap = True
@@ -66,32 +66,32 @@ object Form3: TForm3
     object Label6: TLabel
       Left = 24
       Top = 289
-      Width = 161
-      Height = 66
+      Width = 118
+      Height = 44
       Caption = #1042#1088#1077#1084#1103' '#1073#1077#1079' '#1087#1088#1086#1084#1099#1074#1082#1080' (tp)'
       WordWrap = True
     end
     object Label7: TLabel
       Left = 24
       Top = 344
-      Width = 145
-      Height = 66
+      Width = 104
+      Height = 44
       Caption = #1042#1088#1077#1084#1103' '#1073#1077#1079' '#1073#1091#1088#1077#1085#1080#1103' (t'#1073')'
       WordWrap = True
     end
     object Label12: TLabel
       Left = 24
       Top = 615
-      Width = 129
-      Height = 66
+      Width = 117
+      Height = 44
       Caption = #1044#1083#1080#1085#1072' '#1089#1082#1074#1072#1078#1080#1085#1099' (Lc)'
       WordWrap = True
     end
     object Label13: TLabel
       Left = 22
       Top = 687
-      Width = 131
-      Height = 44
+      Width = 116
+      Height = 22
       Caption = #1044#1072#1074#1083#1077#1085#1080#1077' (Pc)'
       WordWrap = True
     end
@@ -137,7 +137,7 @@ object Form3: TForm3
       object Label9: TLabel
         Left = 16
         Top = 45
-        Width = 161
+        Width = 159
         Height = 44
         Caption = #1053#1072#1088#1091#1078#1085#1099#1081' '#1076#1080#1072#1084#1077#1090#1088' '#1090#1088#1091#1073' (d'#1085')'
         WordWrap = True
@@ -145,49 +145,53 @@ object Form3: TForm3
       object Label10: TLabel
         Left = 16
         Top = 95
-        Width = 161
-        Height = 66
+        Width = 149
+        Height = 44
         Caption = #1042#1085#1091#1090#1088#1077#1085#1085#1080#1081' '#1076#1080#1072#1084#1077#1090#1088' '#1090#1088#1091#1073' (d'#1090')'
         WordWrap = True
       end
       object Label11: TLabel
         Left = 16
         Top = 160
-        Width = 145
+        Width = 123
         Height = 22
         Caption = #1044#1083#1080#1085#1072' '#1090#1088#1091#1073' (L)'
         WordWrap = True
       end
-      object Edit7: TEdit
+      object eK1: TEdit
         Left = 208
         Top = 12
         Width = 121
         Height = 30
         TabOrder = 0
+        Text = '0'
       end
-      object Edit8: TEdit
+      object eDn: TEdit
         Left = 208
         Top = 48
         Width = 121
         Height = 30
         TabOrder = 1
+        Text = '0'
       end
-      object Edit9: TEdit
+      object eDt: TEdit
         Left = 208
         Top = 108
         Width = 121
         Height = 30
         TabOrder = 2
+        Text = '0'
       end
-      object Edit10: TEdit
+      object eL: TEdit
         Left = 208
         Top = 156
         Width = 121
         Height = 30
         TabOrder = 3
+        Text = '0'
       end
     end
-    object LabeledEdit1: TLabeledEdit
+    object eMt: TLabeledEdit
       Left = 402
       Top = 44
       Width = 121
@@ -197,8 +201,9 @@ object Form3: TForm3
       EditLabel.Caption = #1052#1090
       LabelPosition = lpLeft
       TabOrder = 1
+      Text = '0'
     end
-    object LabeledEdit2: TLabeledEdit
+    object eMd: TLabeledEdit
       Left = 577
       Top = 44
       Width = 121
@@ -208,8 +213,9 @@ object Form3: TForm3
       EditLabel.Caption = #1052#1076
       LabelPosition = lpLeft
       TabOrder = 2
+      Text = '0'
     end
-    object LabeledEdit3: TLabeledEdit
+    object eGkml: TLabeledEdit
       Left = 402
       Top = 92
       Width = 121
@@ -219,8 +225,9 @@ object Form3: TForm3
       EditLabel.Caption = 'Gk'#1084#1083
       LabelPosition = lpLeft
       TabOrder = 3
+      Text = '0'
     end
-    object LabeledEdit4: TLabeledEdit
+    object eGkmk: TLabeledEdit
       Left = 577
       Top = 92
       Width = 121
@@ -230,8 +237,9 @@ object Form3: TForm3
       EditLabel.Caption = 'Gk'#1084#1082
       LabelPosition = lpLeft
       TabOrder = 4
+      Text = '0'
     end
-    object LabeledEdit5: TLabeledEdit
+    object eAr: TLabeledEdit
       Left = 484
       Top = 142
       Width = 121
@@ -241,8 +249,9 @@ object Form3: TForm3
       EditLabel.Caption = #1040#1088
       LabelPosition = lpLeft
       TabOrder = 5
+      Text = '0'
     end
-    object LabeledEdit6: TLabeledEdit
+    object eTvr: TLabeledEdit
       Left = 484
       Top = 178
       Width = 121
@@ -252,8 +261,9 @@ object Form3: TForm3
       EditLabel.Caption = 'tn'#1076
       LabelPosition = lpLeft
       TabOrder = 6
+      Text = '0'
     end
-    object LabeledEdit7: TLabeledEdit
+    object eTvrd: TLabeledEdit
       Left = 484
       Top = 214
       Width = 121
@@ -263,8 +273,9 @@ object Form3: TForm3
       EditLabel.Caption = 't'#1088#1076
       LabelPosition = lpLeft
       TabOrder = 7
+      Text = '0'
     end
-    object LabeledEdit8: TLabeledEdit
+    object eTbd: TLabeledEdit
       Left = 484
       Top = 250
       Width = 121
@@ -274,83 +285,134 @@ object Form3: TForm3
       EditLabel.Caption = 't'#1073#1076
       LabelPosition = lpLeft
       TabOrder = 8
+      Text = '0'
     end
-    object Edit1: TEdit
+    object eM: TEdit
       Left = 216
       Top = 26
       Width = 121
       Height = 30
       TabOrder = 9
+      Text = '0'
     end
-    object Edit2: TEdit
+    object eGk: TEdit
       Left = 216
       Top = 92
       Width = 121
       Height = 30
       TabOrder = 10
+      Text = '0'
     end
-    object Edit3: TEdit
+    object eGkt: TEdit
       Left = 216
       Top = 164
       Width = 121
       Height = 30
       TabOrder = 11
+      Text = '0'
     end
-    object Edit4: TEdit
+    object eTpr: TEdit
       Left = 216
       Top = 244
       Width = 121
       Height = 30
       TabOrder = 12
+      Text = '0'
     end
-    object Edit5: TEdit
+    object eTprd: TEdit
       Left = 216
       Top = 300
       Width = 121
       Height = 30
       TabOrder = 13
+      Text = '0'
     end
-    object Edit6: TEdit
+    object eTb: TEdit
       Left = 216
       Top = 354
       Width = 121
       Height = 30
       TabOrder = 14
+      Text = '0'
     end
-    object Edit11: TEdit
+    object eLс: TEdit
       Left = 216
       Top = 628
       Width = 121
       Height = 30
       TabOrder = 15
+      Text = '0'
     end
-    object Edit12: TEdit
+    object ePс: TEdit
       Left = 216
       Top = 684
       Width = 121
       Height = 30
       TabOrder = 16
+      Text = '0'
     end
-    object Edit13: TEdit
+    object eK2: TEdit
       Left = 216
       Top = 734
       Width = 121
       Height = 30
       TabOrder = 17
+      Text = '0'
     end
-    object Edit14: TEdit
+    object eVdr: TEdit
       Left = 568
       Top = 335
       Width = 121
       Height = 30
       TabOrder = 18
+      Text = '0'
     end
-    object Edit15: TEdit
+    object e5: TEdit
       Left = 536
       Top = 507
       Width = 121
       Height = 30
       TabOrder = 19
+    end
+    object ePobd: TEdit
+      Left = 388
+      Top = 588
+      Width = 121
+      Height = 30
+      TabOrder = 20
+      Text = '0'
+    end
+    object eQk: TEdit
+      Left = 388
+      Top = 624
+      Width = 121
+      Height = 30
+      TabOrder = 21
+      Text = '0'
+    end
+    object egamma: TEdit
+      Left = 388
+      Top = 660
+      Width = 121
+      Height = 30
+      TabOrder = 22
+      Text = '0'
+    end
+    object eD: TEdit
+      Left = 388
+      Top = 696
+      Width = 121
+      Height = 30
+      TabOrder = 23
+      Text = '0'
+    end
+    object eTp: TEdit
+      Left = 388
+      Top = 732
+      Width = 121
+      Height = 30
+      TabOrder = 24
+      Text = '0'
     end
   end
   object GroupBox1: TGroupBox
@@ -372,10 +434,22 @@ object Form3: TForm3
       Margins.Bottom = 5
       Align = alClient
       TabOrder = 0
-      ExplicitLeft = 72
-      ExplicitTop = 216
-      ExplicitWidth = 185
-      ExplicitHeight = 89
     end
+  end
+  object ePspo: TEdit
+    Left = 556
+    Top = 624
+    Width = 121
+    Height = 30
+    TabOrder = 2
+    Text = '0'
+  end
+  object ePgr: TEdit
+    Left = 556
+    Top = 660
+    Width = 121
+    Height = 30
+    TabOrder = 3
+    Text = '0'
   end
 end

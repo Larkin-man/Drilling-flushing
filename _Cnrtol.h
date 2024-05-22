@@ -9,7 +9,7 @@
 #include <Forms.hpp>
 #include <ExtCtrls.hpp>
 //---------------------------------------------------------------------------
-class TForm3 : public TForm
+class TF1 : public TForm
 {
 __published:	// IDE-managed Components
 	TScrollBox *ScrollBox1;
@@ -28,38 +28,45 @@ __published:	// IDE-managed Components
 	TLabel *Label12;
 	TLabel *Label13;
 	TLabel *Label14;
-	TLabeledEdit *LabeledEdit1;
+	TLabeledEdit *eMt;
 	TLabel *Label15;
-	TLabeledEdit *LabeledEdit2;
-	TLabeledEdit *LabeledEdit3;
-	TLabeledEdit *LabeledEdit4;
-	TLabeledEdit *LabeledEdit5;
-	TLabeledEdit *LabeledEdit6;
-	TLabeledEdit *LabeledEdit7;
-	TLabeledEdit *LabeledEdit8;
+	TLabeledEdit *eMd;
+	TLabeledEdit *eGkml;
+	TLabeledEdit *eGkmk;
+	TLabeledEdit *eAr;
+	TLabeledEdit *eTvr;
+	TLabeledEdit *eTvrd;
+	TLabeledEdit *eTbd;
 	TLabel *Label16;
-	TEdit *Edit1;
-	TEdit *Edit2;
-	TEdit *Edit3;
-	TEdit *Edit4;
-	TEdit *Edit5;
-	TEdit *Edit6;
-	TEdit *Edit7;
-	TEdit *Edit8;
-	TEdit *Edit9;
-	TEdit *Edit10;
-	TEdit *Edit11;
-	TEdit *Edit12;
-	TEdit *Edit13;
-	TEdit *Edit14;
-	TEdit *Edit15;
+	TEdit *eM;
+	TEdit *eGk;
+	TEdit *eGkt;
+	TEdit *eTpr;
+	TEdit *eTprd;
+	TEdit *eTb;
+	TEdit *eK1;
+	TEdit *eDn;
+	TEdit *eDt;
+	TEdit *eL;
+	TEdit *eLñ;
+	TEdit *ePñ;
+	TEdit *eK2;
+	TEdit *eVdr;
+	TEdit *e5;
 	TGroupBox *GroupBox1;
 	TMemo *Memo1;
+	TEdit *ePobd;
+	TEdit *eQk;
+	TEdit *egamma;
+	TEdit *eD;
+	TEdit *eTp;
+	TEdit *ePspo;
+	TEdit *ePgr;
 private:	// User declarations
 public:		// User declarations
-	__fastcall TForm3(TComponent* Owner);
+	__fastcall TF1(TComponent* Owner);
 };
 //---------------------------------------------------------------------------
-extern PACKAGE TForm3 *Form3;
+extern PACKAGE TF1 *F1;
 //---------------------------------------------------------------------------
 #endif

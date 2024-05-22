@@ -1,16 +1,19 @@
 //---------------------------------------------------------------------------
 
 #include <vcl.h>
+#include <math.h>
+#include <mmsystem.h>
 #pragma hdrstop
 
 #include "_Cnrtol.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
-TForm3 *Form3;
+TF1 *F1;
+int I, lo, i;
+AnsiString txt;
 //---------------------------------------------------------------------------
-__fastcall TForm3::TForm3(TComponent* Owner)
-	: TForm(Owner)
+__fastcall TF1::TF1(TComponent* Owner)	: TForm(Owner)
 {
 }
 //---------------------------------------------------------------------------
