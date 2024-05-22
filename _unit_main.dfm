@@ -11,6 +11,7 @@ object Form4: TForm4
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnCreate = FormCreate
   DesignSize = (
     841
     503)
@@ -2912,12 +2913,15 @@ object Form4: TForm4
     RowCount = 2
     TabOrder = 2
   end
-  object Button1: TButton
-    Left = 248
+  object BitBtn1: TBitBtn
+    Left = 272
     Top = 456
-    Width = 123
-    Height = 41
+    Width = 145
+    Height = 39
     Caption = #1056#1072#1089#1089#1095#1080#1090#1072#1090#1100
+    DoubleBuffered = True
+    ParentDoubleBuffered = False
     TabOrder = 3
+    OnClick = BitBtn1Click
   end
 end
