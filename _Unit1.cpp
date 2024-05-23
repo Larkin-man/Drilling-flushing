@@ -4,9 +4,6 @@
 #include <math.h>
 #pragma hdrstop
 
-#include "_Unit1.h"
-#include "_Unitl.h"
-#include "_Cnrtol.h"
 #include "_unit_main.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)

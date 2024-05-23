@@ -8,6 +8,9 @@
 #include <StdCtrls.hpp>
 #include <Forms.hpp>
 #include <ExtCtrls.hpp>
+#include "_Unit1.h"
+#include "_Unitl.h"
+#include "_Cnrtol.h"
 //---------------------------------------------------------------------------
 class TForm1 : public TForm
 {
