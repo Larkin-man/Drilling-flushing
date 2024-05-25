@@ -11,6 +11,7 @@
 #include <Grids.hpp>
 #include <pngimage.hpp>
 #include <Buttons.hpp>
+#include <Menus.hpp>
 
 //---------------------------------------------------------------------------
 class TForm4 : public TForm
@@ -26,6 +27,12 @@ __published:	// IDE-managed Components
 	TImage *Image1;
 	TBitBtn *BitBtn1;
 	TEdit *debug;
+	TButton *Button1;
+	TPopupMenu *PopupMenu1;
+	TMenuItem *N1;
+	TMenuItem *N2;
+	TMenuItem *N3;
+	TMenuItem *N4;
 	void __fastcall FormCreate(TObject *Sender);
 	void __fastcall BitBtn1Click(TObject *Sender);
 private:	// User declarations

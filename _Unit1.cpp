@@ -4,7 +4,7 @@
 #include <math.h>
 #pragma hdrstop
 
-#include "_unit_main.h"
+#include "_Unit1.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -52,7 +52,7 @@ return (Cd + C * T + Cep * Tcp + Cpr * Tpr) /H;
 }
 
 
-extern
+
 
 //========Ќахождение локального экстремума=========
 const int Vars=2;
@@ -73,12 +73,12 @@ for (int i=1; i<=Vars; i++)
 {
 if (Ymin[i] >= Ymax[i])
 {
-Form1->debug->Text = "—равнение значений: минимум д.б. меньше максимума";
+//Form1->debug->Text = "—равнение значений: минимум д.б. меньше максимума";
 break;
 }
 if ((Y[i] < Ymin[i]) && (Y[i] > Ymax[i]))
 {
-Form1->debug->Text = "—равнение значений: минимум д.б. меньше максимума";
+//Form1->debug->Text = "—равнение значений: минимум д.б. меньше максимума";
 break;
 }
 if((Y[i]<Ymin[i])&&(Y[i]>Ymax[i]))

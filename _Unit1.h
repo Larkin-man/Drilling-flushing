@@ -11,6 +11,7 @@
 #include "_Unit1.h"
 #include "_Unitl.h"
 #include "_Cnrtol.h"
+#include "_unit_main.h"
 //---------------------------------------------------------------------------
 class TForm1 : public TForm
 {

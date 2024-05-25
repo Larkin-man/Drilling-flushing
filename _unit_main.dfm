@@ -18,7 +18,7 @@ object Form4: TForm4
   PixelsPerInch = 120
   TextHeight = 22
   object Label1: TLabel
-    Left = 200
+    Left = 368
     Top = 8
     Width = 217
     Height = 27
@@ -2931,5 +2931,30 @@ object Form4: TForm4
     Height = 30
     TabOrder = 4
     Text = 'debug'
+  end
+  object Button1: TButton
+    Left = 8
+    Top = 8
+    Width = 134
+    Height = 44
+    Caption = 'Button1'
+    Style = bsSplitButton
+    TabOrder = 5
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 160
+    Top = 16
+    object N1: TMenuItem
+      Caption = #1056#1072#1089#1095#1077#1090
+    end
+    object N2: TMenuItem
+      Caption = #1050#1086#1085#1090#1088#1086#1083#1100
+    end
+    object N3: TMenuItem
+      Caption = #1052#1080#1085#1080#1084#1091#1084
+    end
+    object N4: TMenuItem
+      Caption = #1054#1087#1077#1088#1072#1094#1080#1080
+    end
   end
 end
