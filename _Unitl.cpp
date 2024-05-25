@@ -5,6 +5,9 @@
 #pragma hdrstop
 
 #include "_Unitl.h"
+#include "_Unit1.h"
+#include "_Cnrtol.h"
+#include "_unit_main.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -42,24 +45,39 @@ extern double L ;//Длина бурильных труб
 extern double ly ;//Длина УБТ
 extern double lt ;//Длина одной трубы
 
+extern double Criteria();
+
 double FindSpuskDodem()
 {
-//Pspo = 8,75 * 0.01 * ((Vt * dny)/pow(D-Dr, 2) * pow((Dn/(D-Dn)),1.5);
-//Pspo = Pspo && (4*(TauO*L/CriteriaA (D-Dn)+0.025) +a * (Ly*Dn)/D-Dn)+ y*Lc));
+Pspo = 8,75 * 0.01 * ((Vt * dny)/pow(D-dn, 2) * pow((dn/(D-dn)),1.5));
+Pspo = Pspo && (4*(tauo*L/Criteria()*(D-dn)+0.025) +a * (ly*dn)/D-dn)+ Lc;
 ////Спуско-подъёмные операции оптимизируюца согласно критерию "минимум стоимости цикла СПО за рейс",
 ////который может использоваться независимо или входить в состав критерия "минимум стоимости 1 метра проходки"
-//qSpo=Ch*Lc*(1/Vc+1/Vp);
+Pspo=Lc*(1/Lc+1/dn);
 return Pspo;
 }
 
 void __fastcall TForm2::Button1Click(TObject *Sender)
-{                         // LabeledEdit1.
+{
 //	Pspo;// = LabeledEdit1 //zanenne p cknaxnne mpi CIIO;
 // Pgr; //xapaenme rugpopaspsina actos;
 // Vt; //ckopocts xpwxenns tpy6 mpx CTO;
 // a; //yckopenue apmoxenna KooHHDI Tpy6;
 // Gk; //sec na Kpioxe;
 // Gx; //max - MaKcuMasibHo onyer. Bec Ha KpIoKe.
+   Pgr = LabeledEdit2->Text.ToDouble();
+Vt = LabeledEdit3->Text.ToDouble();
+a = LabeledEdit4->Text.ToDouble();
+Gk = LabeledEdit6->Text.ToDouble();
+Gx = LabeledEdit5->Text.ToDouble();
+   LabeledEdit1->Text = FloatToStr(FindSpuskDodem());
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm2::Button2Click(TObject *Sender)
+{
+	Form4->Show();
+   Form2->Close();
 }
 //---------------------------------------------------------------------------
 

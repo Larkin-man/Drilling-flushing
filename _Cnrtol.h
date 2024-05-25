@@ -9,6 +9,11 @@
 #include <Forms.hpp>
 #include <ExtCtrls.hpp>
 #include <ComCtrls.hpp>
+#include "_Unit1.h"
+#include "_Unitl.h"
+#include "_Cnrtol.h"
+#include "_unit_main.h"
+#include <Menus.hpp>
 //---------------------------------------------------------------------------
 class TF1 : public TForm
 {
@@ -71,6 +76,7 @@ __published:	// IDE-managed Components
 	TLabel *Label22;
 	TLabel *Label23;
 	TLabel *Label24;
+	TButton *Button1;
 	void __fastcall ePspoExit(TObject *Sender);
 	void __fastcall FormCreate(TObject *Sender);
 	void __fastcall eMExit(TObject *Sender);
@@ -82,6 +88,7 @@ __published:	// IDE-managed Components
 	void __fastcall Panel1Exit(TObject *Sender);
 	void __fastcall eLÒExit(TObject *Sender);
 	void __fastcall Panel2Exit(TObject *Sender);
+	void __fastcall Button1Click(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TF1(TComponent* Owner);

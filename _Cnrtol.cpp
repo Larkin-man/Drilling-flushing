@@ -417,14 +417,16 @@ sndPlaySound("Error.WAV", SND_ASYNC); //звуковой сигнал
 }
 }
 //-----------------------------------------------------
-
+extern double L;
+extern double Lc;//
+float ch, na;//, d5;
 void __fastcall TF1::eLсExit(TObject *Sender)
 {
-float L, Lс, ch, na;//, d5;
+
 L= StrToFloat(eL->Text); //считывания значений параметров
-Lс= StrToFloat(eLс->Text);
+Lc= StrToFloat(eLс->Text);
 //d5= StrToFloat(e5->Text);
-ch= Lс - L; //вычисление разницы Lс и L
+ch= Lc - L; //вычисление разницы Lс и L
 if (ch<=10)
 if (ch<=5)
 {
@@ -439,6 +441,13 @@ txt=FloatToStrF(ch,ffGeneral,4,2);
 txt="до забоя осталось "+txt+" м.";
 WriteTxt(txt, clLime); //вызов процедуры вывода нового сообщения
 }
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TF1::Button1Click(TObject *Sender)
+{
+	Form4->Show();
+   F1->Close();
 }
 //---------------------------------------------------------------------------
 

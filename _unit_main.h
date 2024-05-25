@@ -12,7 +12,10 @@
 #include <pngimage.hpp>
 #include <Buttons.hpp>
 #include <Menus.hpp>
-
+#include "_Unit1.h"
+#include "_Unitl.h"
+#include "_Cnrtol.h"
+#include "_unit_main.h"
 //---------------------------------------------------------------------------
 class TForm4 : public TForm
 {
@@ -28,13 +31,18 @@ __published:	// IDE-managed Components
 	TBitBtn *BitBtn1;
 	TEdit *debug;
 	TButton *Button1;
-	TPopupMenu *PopupMenu1;
+	TPopupMenu *FORMS;
 	TMenuItem *N1;
 	TMenuItem *N2;
 	TMenuItem *N3;
 	TMenuItem *N4;
 	void __fastcall FormCreate(TObject *Sender);
 	void __fastcall BitBtn1Click(TObject *Sender);
+	void __fastcall N1Click(TObject *Sender);
+	void __fastcall N2Click(TObject *Sender);
+	void __fastcall N3Click(TObject *Sender);
+	void __fastcall N4Click(TObject *Sender);
+	void __fastcall Button1Click(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TForm4(TComponent* Owner);

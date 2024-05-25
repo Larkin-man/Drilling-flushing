@@ -18,8 +18,8 @@ object Form4: TForm4
   PixelsPerInch = 120
   TextHeight = 22
   object Label1: TLabel
-    Left = 368
-    Top = 8
+    Left = 224
+    Top = 25
     Width = 217
     Height = 27
     Caption = #1048#1089#1093#1086#1076#1085#1099#1077' '#1087#1072#1088#1072#1084#1077#1090#1088#1099
@@ -2937,24 +2937,30 @@ object Form4: TForm4
     Top = 8
     Width = 134
     Height = 44
-    Caption = 'Button1'
+    Caption = #1050#1086#1085#1090#1088#1086#1083#1100
+    DropDownMenu = FORMS
     Style = bsSplitButton
     TabOrder = 5
+    OnClick = Button1Click
   end
-  object PopupMenu1: TPopupMenu
+  object FORMS: TPopupMenu
     Left = 160
     Top = 16
     object N1: TMenuItem
       Caption = #1056#1072#1089#1095#1077#1090
+      OnClick = N1Click
     end
     object N2: TMenuItem
       Caption = #1050#1086#1085#1090#1088#1086#1083#1100
+      OnClick = N2Click
     end
     object N3: TMenuItem
       Caption = #1052#1080#1085#1080#1084#1091#1084
+      OnClick = N3Click
     end
     object N4: TMenuItem
       Caption = #1054#1087#1077#1088#1072#1094#1080#1080
+      OnClick = N4Click
     end
   end
 end

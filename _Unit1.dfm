@@ -2,7 +2,7 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = #1052#1080#1085#1080#1084#1091#1084' '#1089#1090#1086#1080#1084#1086#1089#1090#1080' 1 '#1084#1077#1090#1088#1072' '#1087#1088#1086#1093#1086#1076#1082#1080
-  ClientHeight = 424
+  ClientHeight = 514
   ClientWidth = 636
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -15,7 +15,7 @@ object Form1: TForm1
   TextHeight = 22
   object LabeledEdit1: TLabeledEdit
     Left = 16
-    Top = 32
+    Top = 80
     Width = 609
     Height = 30
     EditLabel.Width = 139
@@ -25,7 +25,7 @@ object Form1: TForm1
   end
   object LabeledEdit2: TLabeledEdit
     Left = 16
-    Top = 88
+    Top = 136
     Width = 609
     Height = 30
     EditLabel.Width = 570
@@ -35,7 +35,7 @@ object Form1: TForm1
   end
   object LabeledEdit3: TLabeledEdit
     Left = 16
-    Top = 144
+    Top = 192
     Width = 369
     Height = 30
     EditLabel.Width = 223
@@ -45,7 +45,7 @@ object Form1: TForm1
   end
   object LabeledEdit4: TLabeledEdit
     Left = 16
-    Top = 200
+    Top = 248
     Width = 369
     Height = 30
     EditLabel.Width = 355
@@ -55,7 +55,7 @@ object Form1: TForm1
   end
   object LabeledEdit5: TLabeledEdit
     Left = 391
-    Top = 144
+    Top = 192
     Width = 234
     Height = 30
     EditLabel.Width = 126
@@ -65,7 +65,7 @@ object Form1: TForm1
   end
   object LabeledEdit6: TLabeledEdit
     Left = 391
-    Top = 200
+    Top = 248
     Width = 234
     Height = 30
     EditLabel.Width = 94
@@ -75,7 +75,7 @@ object Form1: TForm1
   end
   object LabeledEdit7: TLabeledEdit
     Left = 391
-    Top = 256
+    Top = 304
     Width = 234
     Height = 30
     EditLabel.Width = 226
@@ -85,7 +85,7 @@ object Form1: TForm1
   end
   object LabeledEdit8: TLabeledEdit
     Left = 391
-    Top = 312
+    Top = 360
     Width = 234
     Height = 30
     EditLabel.Width = 79
@@ -95,7 +95,7 @@ object Form1: TForm1
   end
   object LabeledEdit9: TLabeledEdit
     Left = 16
-    Top = 376
+    Top = 424
     Width = 329
     Height = 30
     EditLabel.Width = 319
@@ -105,7 +105,7 @@ object Form1: TForm1
   end
   object Button1: TButton
     Left = 391
-    Top = 379
+    Top = 427
     Width = 170
     Height = 25
     Caption = #1056#1072#1089#1089#1095#1080#1090#1072#1090#1100
@@ -114,7 +114,7 @@ object Form1: TForm1
   end
   object Button2: TButton
     Left = 216
-    Top = 248
+    Top = 296
     Width = 75
     Height = 25
     Caption = 'Button2'
@@ -123,7 +123,7 @@ object Form1: TForm1
   end
   object Button3: TButton
     Left = 64
-    Top = 248
+    Top = 296
     Width = 75
     Height = 25
     Caption = 'Button2'
@@ -132,10 +132,21 @@ object Form1: TForm1
   end
   object debug: TEdit
     Left = 96
-    Top = 288
+    Top = 336
     Width = 121
     Height = 30
     TabOrder = 12
     Text = 'debug'
+  end
+  object Button4: TButton
+    Left = 16
+    Top = 8
+    Width = 134
+    Height = 44
+    Caption = #1056#1072#1089#1095#1077#1090
+    DropDownMenu = Form4.FORMS
+    Style = bsSplitButton
+    TabOrder = 13
+    OnClick = Button4Click
   end
 end
