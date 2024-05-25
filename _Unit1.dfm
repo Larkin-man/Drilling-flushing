@@ -2,7 +2,7 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = #1052#1080#1085#1080#1084#1091#1084' '#1089#1090#1086#1080#1084#1086#1089#1090#1080' 1 '#1084#1077#1090#1088#1072' '#1087#1088#1086#1093#1086#1076#1082#1080
-  ClientHeight = 514
+  ClientHeight = 498
   ClientWidth = 636
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -112,31 +112,12 @@ object Form1: TForm1
     TabOrder = 9
     OnClick = Button1Click
   end
-  object Button2: TButton
-    Left = 216
-    Top = 296
-    Width = 75
-    Height = 25
-    Caption = 'Button2'
-    TabOrder = 10
-    OnClick = Button2Click
-  end
-  object Button3: TButton
-    Left = 64
-    Top = 296
-    Width = 75
-    Height = 25
-    Caption = 'Button2'
-    TabOrder = 11
-    OnClick = Button3Click
-  end
   object debug: TEdit
-    Left = 96
-    Top = 336
+    Left = 16
+    Top = 460
     Width = 121
     Height = 30
-    TabOrder = 12
-    Text = 'debug'
+    TabOrder = 10
   end
   object Button4: TButton
     Left = 16
@@ -146,7 +127,7 @@ object Form1: TForm1
     Caption = #1056#1072#1089#1095#1077#1090
     DropDownMenu = Form4.FORMS
     Style = bsSplitButton
-    TabOrder = 13
+    TabOrder = 11
     OnClick = Button4Click
   end
 end

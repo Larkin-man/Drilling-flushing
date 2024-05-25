@@ -3,7 +3,7 @@
 			<ProjectGuid>{C613A8B1-217D-467D-BC2A-4D547A9FFADD}</ProjectGuid>
 			<ProjectVersion>12.0</ProjectVersion>
 			<MainSource>Drilling.cpp</MainSource>
-			<Config Condition="'$(Config)'==''">Debug</Config>
+			<Config Condition="'$(Config)'==''">Release</Config>
 		</PropertyGroup>
 		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
 			<Base>true</Base>

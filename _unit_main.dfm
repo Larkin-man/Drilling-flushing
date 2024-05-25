@@ -2892,7 +2892,9 @@ object Form4: TForm4
     Height = 76
     Anchors = [akLeft, akTop, akRight]
     ColCount = 23
+    FixedCols = 0
     RowCount = 2
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goRowSizing, goColSizing, goEditing, goAlwaysShowEditor]
     TabOrder = 0
   end
   object Kfc: TStringGrid
@@ -2901,7 +2903,9 @@ object Form4: TForm4
     Width = 524
     Height = 76
     ColCount = 8
+    FixedCols = 0
     RowCount = 2
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goRowSizing, goColSizing, goEditing, goAlwaysShowEditor]
     TabOrder = 1
   end
   object Cnt: TStringGrid
@@ -2910,7 +2914,9 @@ object Form4: TForm4
     Width = 589
     Height = 76
     ColCount = 9
+    FixedCols = 0
     RowCount = 2
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goRowSizing, goColSizing, goEditing, goTabs]
     TabOrder = 2
   end
   object BitBtn1: TBitBtn
@@ -2930,7 +2936,6 @@ object Form4: TForm4
     Width = 121
     Height = 30
     TabOrder = 4
-    Text = 'debug'
   end
   object Button1: TButton
     Left = 8

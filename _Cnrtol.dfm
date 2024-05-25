@@ -29,12 +29,11 @@
     Top = 58
     Width = 729
     Height = 752
-    VertScrollBar.Position = 306
     Anchors = [akLeft, akTop, akBottom]
     TabOrder = 0
     object Label2: TLabel
       Left = 24
-      Top = -290
+      Top = 16
       Width = 161
       Height = 66
       AutoSize = False
@@ -43,7 +42,7 @@
     end
     object Label3: TLabel
       Left = 24
-      Top = -211
+      Top = 95
       Width = 151
       Height = 22
       Caption = #1042#1077#1089' '#1085#1072' '#1082#1088#1102#1082#1077' (Gk)'
@@ -51,7 +50,7 @@
     end
     object Label4: TLabel
       Left = 24
-      Top = -161
+      Top = 145
       Width = 138
       Height = 66
       Caption = #1056#1077#1089#1091#1088#1089' '#1085#1072#1075#1088#1091#1079#1082#1080' '#1090#1072#1083#1077#1074#1086#1075#1086' '#1082#1072#1085#1072#1090#1072' (Gki*ti)'
@@ -59,7 +58,7 @@
     end
     object Label5: TLabel
       Left = 24
-      Top = -76
+      Top = 230
       Width = 117
       Height = 44
       Caption = #1042#1088#1077#1084#1103' '#1073#1077#1079' '#1074#1088#1072#1097#1077#1085#1080#1103' (tn)'
@@ -67,7 +66,7 @@
     end
     object Label6: TLabel
       Left = 24
-      Top = -17
+      Top = 289
       Width = 118
       Height = 44
       Caption = #1042#1088#1077#1084#1103' '#1073#1077#1079' '#1087#1088#1086#1084#1099#1074#1082#1080' (tp)'
@@ -75,7 +74,7 @@
     end
     object Label7: TLabel
       Left = 24
-      Top = 38
+      Top = 344
       Width = 104
       Height = 44
       Caption = #1042#1088#1077#1084#1103' '#1073#1077#1079' '#1073#1091#1088#1077#1085#1080#1103' (t'#1073')'
@@ -83,7 +82,7 @@
     end
     object Label12: TLabel
       Left = 24
-      Top = 309
+      Top = 615
       Width = 117
       Height = 44
       Caption = #1044#1083#1080#1085#1072' '#1089#1082#1074#1072#1078#1080#1085#1099' (Lc)'
@@ -91,7 +90,7 @@
     end
     object Label13: TLabel
       Left = 22
-      Top = 381
+      Top = 687
       Width = 116
       Height = 22
       Caption = #1044#1072#1074#1083#1077#1085#1080#1077' (Pc)'
@@ -99,7 +98,7 @@
     end
     object Label14: TLabel
       Left = 24
-      Top = 431
+      Top = 737
       Width = 19
       Height = 22
       Caption = 'k2'
@@ -107,14 +106,14 @@
     end
     object Label15: TLabel
       Left = 504
-      Top = -290
+      Top = 16
       Width = 67
       Height = 22
       Caption = #1043#1088#1072#1085#1080#1094#1072
     end
     object Label16: TLabel
       Left = 394
-      Top = -3
+      Top = 303
       Width = 106
       Height = 88
       Caption = #1054#1073#1098#1077#1084' '#1076#1086#1083#1080#1074#1072#1077#1084#1086#1075#1086' '#1088#1072#1089#1090#1074#1086#1088#1072' (V'#1076#1088')'
@@ -122,7 +121,7 @@
     end
     object Panel1: TPanel
       Left = 24
-      Top = 93
+      Top = 399
       Width = 337
       Height = 194
       Caption = 'Panel1'
@@ -196,7 +195,7 @@
     end
     object eMt: TLabeledEdit
       Left = 402
-      Top = -262
+      Top = 44
       Width = 121
       Height = 30
       EditLabel.Width = 22
@@ -208,7 +207,7 @@
     end
     object eMd: TLabeledEdit
       Left = 577
-      Top = -262
+      Top = 44
       Width = 121
       Height = 30
       EditLabel.Width = 24
@@ -220,7 +219,7 @@
     end
     object eGkml: TLabeledEdit
       Left = 402
-      Top = -214
+      Top = 92
       Width = 121
       Height = 30
       EditLabel.Width = 43
@@ -232,7 +231,7 @@
     end
     object eGkmk: TLabeledEdit
       Left = 577
-      Top = -214
+      Top = 92
       Width = 121
       Height = 30
       EditLabel.Width = 42
@@ -244,7 +243,7 @@
     end
     object eAr: TLabeledEdit
       Left = 484
-      Top = -164
+      Top = 142
       Width = 121
       Height = 30
       EditLabel.Width = 21
@@ -256,7 +255,7 @@
     end
     object eTvr: TLabeledEdit
       Left = 484
-      Top = -128
+      Top = 178
       Width = 121
       Height = 30
       EditLabel.Width = 26
@@ -269,7 +268,7 @@
     end
     object eTvrd: TLabeledEdit
       Left = 484
-      Top = -92
+      Top = 214
       Width = 121
       Height = 30
       EditLabel.Width = 26
@@ -281,7 +280,7 @@
     end
     object eTbd: TLabeledEdit
       Left = 484
-      Top = -56
+      Top = 250
       Width = 121
       Height = 30
       EditLabel.Width = 26
@@ -293,7 +292,7 @@
     end
     object eM: TEdit
       Left = 216
-      Top = -280
+      Top = 26
       Width = 121
       Height = 30
       TabOrder = 0
@@ -302,7 +301,7 @@
     end
     object eGk: TEdit
       Left = 216
-      Top = -214
+      Top = 92
       Width = 121
       Height = 30
       TabOrder = 3
@@ -311,7 +310,7 @@
     end
     object eGkt: TEdit
       Left = 216
-      Top = -142
+      Top = 164
       Width = 121
       Height = 30
       TabOrder = 6
@@ -320,7 +319,7 @@
     end
     object eTpr: TEdit
       Left = 216
-      Top = -62
+      Top = 244
       Width = 121
       Height = 30
       TabOrder = 11
@@ -329,7 +328,7 @@
     end
     object eTprd: TEdit
       Left = 216
-      Top = -6
+      Top = 300
       Width = 121
       Height = 30
       TabOrder = 12
@@ -337,7 +336,7 @@
     end
     object eTb: TEdit
       Left = 216
-      Top = 48
+      Top = 354
       Width = 121
       Height = 30
       TabOrder = 13
@@ -346,7 +345,7 @@
     end
     object eLс: TEdit
       Left = 216
-      Top = 322
+      Top = 628
       Width = 121
       Height = 30
       TabOrder = 16
@@ -355,7 +354,7 @@
     end
     object ePс: TEdit
       Left = 216
-      Top = 378
+      Top = 684
       Width = 121
       Height = 30
       TabOrder = 17
@@ -363,7 +362,7 @@
     end
     object eK2: TEdit
       Left = 216
-      Top = 428
+      Top = 734
       Width = 121
       Height = 30
       TabOrder = 18
@@ -371,7 +370,7 @@
     end
     object eVdr: TEdit
       Left = 528
-      Top = 29
+      Top = 335
       Width = 121
       Height = 30
       TabOrder = 14
@@ -379,7 +378,7 @@
     end
     object e5: TEdit
       Left = 536
-      Top = 201
+      Top = 507
       Width = 121
       Height = 30
       TabOrder = 19
@@ -387,7 +386,7 @@
     end
     object Panel2: TPanel
       Left = 24
-      Top = 478
+      Top = 784
       Width = 337
       Height = 270
       Caption = 'Panel2'
